@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-div {
+    height: 800px;
+    background-color: black;
+    position: relative;
+    padding: 10px;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-div {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.id1 {
+    position: absolute;
+    font-size: 100px;
+    left: 250px;
+    top: 300px;
+}
+
+.highlight {
+    background: linear-gradient(to right, rgba(255, 0, 174, 0.533), rgb(140, 0, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ;
+}
+
+.footer-div {
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.img {
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    margin: 0 auto 0;
+}
+
+.decoration:hover {
+    text-decoration: underline;
+}
+
+.hello {
+    animation: mover-left 0.5s ease 2 alternate;
+
+}
+
+@keyframes mover-left {
+    0% {
+        left: 250px;
+        top: 300px;
+    }
+    50% {
+        left: 150px;
+    }
+
+    100% {
+        left: 250px;
+        top: 450px;
+    }
+}
+
+.carry {
+    animation: mover-right1 0.5s ease 2 alternate;
+
+}
+
+@keyframes mover-right1 {
+    0% {
+        left: 500px;
+        top: 400px;
+    }
+
+    50% {
+        left: 650px;
+        top: 400px;
+
+    }
+
+    100% {
+        left: 500px;
+        top: 300px;
+    }
+}
+
+.saini {
+    animation: mover-right2 0.5s ease 2 alternate;
+
+}
+
+@keyframes mover-right2 {
+    0% {
+        left: 750px;
+    }
+
+    50% {
+        left: 1000px;
+        top: 550;
+    }
+
+    100% {
+        left: 750px;
+        top: 250px;
+    }
+}
